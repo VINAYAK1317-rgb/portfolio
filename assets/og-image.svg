@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bg-grad)" />
+
+  <!-- Grid lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100" />
+    <line x1="0" y1="200" x2="1200" y2="200" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="0" y1="500" x2="1200" y2="500" />
+    <line x1="200" y1="0" x2="200" y2="630" />
+    <line x1="400" y1="0" x2="400" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="800" y1="0" x2="800" y2="630" />
+    <line x1="1000" y1="0" x2="1000" y2="630" />
+  </g>
+
+  <!-- Accent Circle Glow -->
+  <circle cx="950" cy="315" r="220" fill="rgba(56,189,248,0.06)" filter="url(#glow)" />
+  <circle cx="200" cy="150" r="150" fill="rgba(168,85,247,0.05)" filter="url(#glow)" />
+
+  <!-- Card Border -->
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="rgba(15,23,42,0.6)" stroke="rgba(56,189,248,0.3)" stroke-width="2" filter="url(#glow)" />
+
+  <!-- Monogram Badge -->
+  <rect x="120" y="120" width="60" height="60" rx="14" fill="#0c192e" stroke="#38bdf8" stroke-width="2" />
+  <path d="M136 136 L150 162 L164 136" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Subtitle Tag -->
+  <text x="200" y="157" fill="#38bdf8" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="2">COMPUTER SCIENCE &amp; ENGINEERING</text>
+
+  <!-- Main Name Heading -->
+  <text x="120" y="260" fill="#ffffff" font-family="'Space Grotesk', system-ui, sans-serif" font-size="56" font-weight="800" letter-spacing="-1">Vinayak Sajeendran</text>
+
+  <!-- Core Proposition -->
+  <text x="120" y="335" fill="url(#cyan-blue)" font-family="'Inter', system-ui, sans-serif" font-size="34" font-weight="700">Building technology that solves real-world problems.</text>
+
+  <!-- Domains / Tags -->
+  <text x="120" y="415" fill="#94a3b8" font-family="'Inter', system-ui, sans-serif" font-size="22" font-weight="400">Software Developer · IoT Systems · Cybersecurity · Full-Stack Web Technologies</text>
+
+  <!-- Footer Info -->
+  <line x1="120" y1="460" x2="1080" y2="460" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  
+  <text x="120" y="505" fill="#64748b" font-family="'Space Grotesk', monospace" font-size="18">Lovely Professional University</text>
+  <text x="780" y="505" fill="#38bdf8" font-family="'Space Grotesk', monospace" font-size="18">github.com/VINAYAK1317-rgb</text>
+</svg>
